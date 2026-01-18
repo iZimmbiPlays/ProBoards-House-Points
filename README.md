@@ -13,19 +13,19 @@ This plugin provides:
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. Download **`HousePoints.pbp`** from this repository.
 2. Go to **Admin Dashboard → Plugins → Import Plugin**.
 3. Upload the `.pbp` file.
 4. Configure plugin **Settings**, **Keys**, and **Templates** as outlined below.
 
-> ⚠️ ProBoards requires a single compiled `.pbp` file.  
+> ProBoards requires a single compiled `.pbp` file.  
 > The `/src` folder is for development and documentation only.
 
 ---
 
-## 🧩 Required Template Placeholders
+## Required Template Placeholders
 
 ### 1️⃣ Profile (Summary Tab)
 
@@ -39,16 +39,17 @@ Required to display user points and allow staff editing.
 
 <tbody id="hp-profile-slot"></tbody>
 
+```
 ### 2️⃣ Mini-Profile (Optional)
-
+```html
 <div class="hp-mini-slot"></div>
-
+```
 ### 3️⃣ Admin Reset Points UI (Optional)
 
 Only required on pages where you want staff, preferably admins to be able to reset points. It is suggested that you make a hidden board that only administrators have access to and place this code in the Header for that board.
-
+```html
 <div id="hp-reset-ui"></div>
-
+```
 ---
 
 Scoreboard
