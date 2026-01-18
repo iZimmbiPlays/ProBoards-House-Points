@@ -1,0 +1,136 @@
+/* ===========================
+   House Points - Theme Friendly
+   (inherits colors from theme)
+   =========================== */
+
+/* ---- Scoreboard ---- */
+#hp-scoreboard, #hixhp-scoreboard { margin: 10px 0; }
+
+.hp-scoreboard-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 14px;
+  flex-wrap: nowrap;
+}
+
+.hp-scoreboard-item { width: 160px; text-align: center; }
+
+.hp-scoreboard-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 6px;
+}
+
+.hp-scoreboard-label { margin: 2px 0 4px; font-weight: bold; }
+
+.hp-scoreboard-total { font-weight: bold; font-size: 16px; }
+
+.hp-scoreboard-links { text-align: center; margin-top: 6px; }
+.hp-pointslog-link { text-decoration: underline; }
+
+/* ---- Profile edit icon ---- */
+.hp-edit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  vertical-align: middle;
+  opacity: 0.85;
+  text-decoration: none;
+  color: inherit;
+}
+.hp-edit:hover { opacity: 1; }
+.hp-edit svg { width: 14px; height: 14px; fill: currentColor; }
+.hp-edit-icon-img { width: 14px; height: 14px; display: block; }
+
+/* ---- Dialog ---- */
+.hp-dialog { padding: 10px; }
+.hp-dialog-row { margin-bottom: 10px; }
+.hp-dialog-label { font-weight: bold; display: block; margin-bottom: 6px; }
+.hp-dialog-input { width: 240px; }
+.hp-reason-input { width: 420px; max-width: 100%; }
+
+/* ---- Mini profile ---- */
+.hp-mini { margin-top: 6px; font-size: 11px; line-height: 1.35; }
+.hp-mini-abbr { font-weight: bold; }
+.hp-mini-val { font-weight: bold; }
+
+/* ---- Reset UI ---- */
+.hp-reset-box {
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  margin: 10px 0;
+}
+.hp-reset-title { font-weight: bold; margin-bottom: 6px; }
+.hp-reset-text { margin-bottom: 8px; }
+.hp-reset-actions { display: flex; gap: 10px; align-items: center; }
+
+/* ---- Points Log page ---- */
+.hp-pointslog .hp-pl-sub { margin: 6px 0 12px; }
+.hp-pl-back { display: inline-block; margin-bottom: 6px; }
+.hp-pl-table { width: 100%; border-collapse: collapse; }
+.hp-pl-th, .hp-pl-td {
+  padding: 10px 12px;            /* equal spacing inside cells */
+  border: 1px solid rgba(0,0,0,0.15);
+  vertical-align: top;
+}
+.hp-pl-empty { padding: 12px; text-align: center; }
+
+/* ---- Notification injection (Profile > Notifications) ---- */
+.hp-pb-notif-wrap { margin-bottom: 12px; }
+
+.hp-pb-notif-toolbar { margin-bottom: 8px; }
+
+.hp-pb-notif {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+
+.hp-pb-notif:first-of-type {
+  border-top: none;
+}
+
+.hp-pb-notif-left {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.hp-pb-new {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  line-height: 1.2;
+  min-width: 34px;
+  text-align: center;
+}
+
+.hp-pb-text { line-height: 1.25; }
+.hp-pb-line1 { margin-bottom: 2px; }
+.hp-pb-line2 { opacity: 0.9; }
+
+.hp-pb-notif-right {
+  white-space: nowrap;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* ---- Nav bubble on Profile link ----
+   We do NOT hardcode colors; bubble style comes from cloned PB bubble if present.
+   This just ensures spacing looks right.
+*/
+#navigation-menu a .hp-nav-bubble { margin-left: 6px; }
